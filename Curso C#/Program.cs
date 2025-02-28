@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Curso_C_.Seccion4;
+using Curso_C_.Seccion5__Metodos_;
+using Curso_C_.Seccion5;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +12,40 @@ namespace Curso_C_
     {
         static void Main(string[] args)
         {
+            //Segundo_ejercicio_para_for factorial = new Segundo_ejercicio_para_for();
+            //factorial.StartFactorial();
+
+            //Uso_del_While uso_del_while = new Uso_del_While();
+            //uso_del_while.StartClass();
+
+            //Ejercicio_While ejercicio_while = new Ejercicio_While();
+            //ejercicio_while.StartEjercicioWhile();
+
+            //Uso_del_Do_While uso_del_do_while = new Uso_del_Do_While();
+            //uso_del_do_while.StartClass();
+
+            //Ejercicio_Do_While ejercicio_do_while = new Ejercicio_Do_While();
+            //ejercicio_do_while.StartEjercicio_Do_While();
+            //
+            //IteracionAnidadas iteracionAnidadas = new IteracionAnidadas();
+            //iteracionAnidadas.IteracionAnidada();
+
+
+            //EjerciciosSeccion4 ejerciciosSeccion4 = new EjerciciosSeccion4();
+            //ejerciciosSeccion4.CalcularPotencia();
+
+            //EjerciciosSeccion4 ejerciciosSeccion4 = new EjerciciosSeccion4();
+            //ejerciciosSeccion4.CalcularNumerosPrimos();
+
+            //Metodos metodos = new Metodos();
+            //metodos.StartMetodo();
+
+            //EjercicioUnoMetodos ejercicioUnoMetodos = new EjercicioUnoMetodos();
+            //ejercicioUnoMetodos.StartMetodo();
+
+            EjercicioDosMetodos ejercicioDosMetodos = new EjercicioDosMetodos();
+            ejercicioDosMetodos.StartMetodo();
+
             //byte mes = 0;
 
             //Console.WriteLine("Meses del anio: ");
@@ -78,20 +114,20 @@ namespace Curso_C_
 
 
 
-            Console.WriteLine("Ingrese el tiempo de permanencia en el estacionamiento en horas");
-            byte hora = Convert.ToByte(Console.ReadLine());
+            //Console.WriteLine("Ingrese el tiempo de permanencia en el estacionamiento en horas");
+            //byte hora = Convert.ToByte(Console.ReadLine());
 
-            if (hora == 1)
-            {
-                Console.WriteLine("Debes de pagar: $5");
-            }else if (hora > 1 && hora <= 2)
-            {
-                Console.WriteLine("Debes de pagar: $15");
-            }else if(hora > 2)
-            {
-                Console.WriteLine("Debes de pagar: $40");
+            //if (hora == 1)
+            //{
+            //    Console.WriteLine("Debes de pagar: $5");
+            //}else if (hora > 1 && hora <= 2)
+            //{
+            //    Console.WriteLine("Debes de pagar: $15");
+            //}else if(hora > 2)
+            //{
+            //    Console.WriteLine("Debes de pagar: $40");
 
-            }
+            //}
 
         }
     }
