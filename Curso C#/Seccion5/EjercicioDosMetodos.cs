@@ -31,7 +31,6 @@ namespace Curso_C_.Seccion5
         {
             string respuesta = "";
             int figura = 0;
-            decimal dato = 0M;
 
             (decimal radio, decimal pi, decimal resultado) circulo = (0, 0, 0);
             (decimal lado, decimal resultado) cuadrado = (0, 0);

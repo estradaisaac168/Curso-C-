@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Curso_C_.Seccion6;
 
 namespace Curso_C_
 {
@@ -43,8 +44,14 @@ namespace Curso_C_
             //EjercicioUnoMetodos ejercicioUnoMetodos = new EjercicioUnoMetodos();
             //ejercicioUnoMetodos.StartMetodo();
 
-            EjercicioDosMetodos ejercicioDosMetodos = new EjercicioDosMetodos();
-            ejercicioDosMetodos.StartMetodo();
+            //EjercicioDosMetodos ejercicioDosMetodos = new EjercicioDosMetodos();
+            //ejercicioDosMetodos.StartMetodo();
+
+            //Matrices matrices = new Matrices();
+            //matrices.StartMethod();
+
+            EjercicioUnoMatriz ejercicioUnoMatriz = new EjercicioUnoMatriz();
+             ejercicioUnoMatriz.StartMethod();
 
             //byte mes = 0;
 
