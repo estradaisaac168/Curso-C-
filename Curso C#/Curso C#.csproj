@@ -57,6 +57,11 @@
     <Compile Include="Seccion5\Metodos.cs" />
     <Compile Include="Seccion6\EjercicioUnoMatriz.cs" />
     <Compile Include="Seccion6\Matrices.cs" />
+    <Compile Include="Seccion7\Automovil.cs" />
+    <Compile Include="Seccion7\Bank.cs" />
+    <Compile Include="Seccion7\Empleado.cs" />
+    <Compile Include="Seccion8\Colecciones.cs" />
+    <Compile Include="Seccion8\ColeccionGenericaList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
