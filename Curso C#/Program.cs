@@ -273,12 +273,12 @@ namespace Curso_C_
 
             //********************************** Uso de la clase ColeccionGenericaList
 
-            string elemento;
-            int opcion;
+            //string elemento;
+            //int opcion;
 
-            Random random = new Random();
+            //Random random = new Random();
 
-            ColeccionGenericaList coleccionGenericaList = new ColeccionGenericaList();
+            //ColeccionGenericaList coleccionGenericaList = new ColeccionGenericaList();
 
             //do
             //{
@@ -293,9 +293,10 @@ namespace Curso_C_
 
             //coleccionGenericaList.Mostrar();
 
-            coleccionGenericaList.Insertar(1, "Juan");
 
-            coleccionGenericaList.Mostrar();
+            //coleccionGenericaList.Insertar();
+
+            //coleccionGenericaList.Mostrar();
 
 
 
@@ -303,8 +304,87 @@ namespace Curso_C_
 
 
 
+            //****************************************** Uso de la clase EjercicioUnoListas
 
 
+
+
+
+
+
+            //EjercicioUnoListas ejercicioUnoListas = new EjercicioUnoListas();
+            //ejercicioUnoListas.Administrar();
+
+
+            //****************************************** Fin de uso de la clase EjercicioUnoListas
+
+
+
+
+
+
+            //****************************************** Uso de la clase Stack
+
+
+
+            //Stack stack = new Stack();
+            //stack.AgregarElemento(6);
+
+            //stack.MostrarElementos();
+
+
+
+
+            //****************************************** Fin de uso de la clase Stack
+
+
+
+
+            //****************************************** Uso de la clase Dictionary
+
+
+
+            //Dictionary dictionary = new Dictionary();
+
+            //dictionary.AgregarElemento(6, "Sabado");
+            //dictionary.AgregarElemento(7, "Domingo");
+
+            //dictionary.MostrarElementos();
+
+
+
+            //****************************************** Fin de uso de la clase Dictionary
+
+
+
+
+
+
+
+            //****************************************** Uso de la clase EjericioUnoConDictionary
+
+
+
+
+            //EjercicioUnoConDictionary ejercicioUnoConDictionary = new EjercicioUnoConDictionary();
+            //ejercicioUnoConDictionary.Handler();
+
+
+
+
+            //****************************************** Fin de uso de la clase EjericioUnoConDictionary
+
+
+
+            //**************************************************** Ejercicio de la seccion 8 con listas
+
+
+            EjercicioDosDictionary ejercicio = new EjercicioDosDictionary();
+
+            ejercicio.Handler();
+
+
+            //**************************************************** Fin Ejercicio de la seccion 8 con listas
 
 
             //byte mes = 0;

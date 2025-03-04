@@ -62,6 +62,12 @@
     <Compile Include="Seccion7\Empleado.cs" />
     <Compile Include="Seccion8\Colecciones.cs" />
     <Compile Include="Seccion8\ColeccionGenericaList.cs" />
+    <Compile Include="Seccion8\Dictionary.cs" />
+    <Compile Include="Seccion8\EjercicioDosDictionary.cs" />
+    <Compile Include="Seccion8\EjercicioUnoConDictionary.cs" />
+    <Compile Include="Seccion8\EjercicioUnoListas.cs" />
+    <Compile Include="Seccion8\Queue.cs" />
+    <Compile Include="Seccion8\Stack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
