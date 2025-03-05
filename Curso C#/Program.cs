@@ -10,6 +10,7 @@ using Curso_C_.Seccion6;
 using Curso_C_.Seccion7;
 using Curso_C_.Seccion8;
 using System.Xml.Linq;
+using Curso_C_.Seccion9;
 
 namespace Curso_C_
 {
@@ -379,12 +380,28 @@ namespace Curso_C_
             //**************************************************** Ejercicio de la seccion 8 con listas
 
 
-            EjercicioDosDictionary ejercicio = new EjercicioDosDictionary();
+            //EjercicioDosDictionary ejercicio = new EjercicioDosDictionary();
 
-            ejercicio.Handler();
+            //ejercicio.Handler();
 
 
             //**************************************************** Fin Ejercicio de la seccion 8 con listas
+
+
+
+
+
+
+
+            //**************************************************** Seccion 9
+
+
+            ClaseString claseString = new ClaseString();
+            claseString.MethodString();
+
+
+
+            //********************************************************************************************************************
 
 
             //byte mes = 0;
