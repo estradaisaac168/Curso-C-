@@ -396,10 +396,35 @@ namespace Curso_C_
             //**************************************************** Seccion 9
 
 
-            ClaseString claseString = new ClaseString();
-            claseString.MethodString();
+            //ClaseString claseString = new ClaseString();
+            //claseString.MethodString();
+
+            
+            string name, opcion, password;
+
+            Console.WriteLine("\t\tRegistro\n\n");
+
+            Console.Write("Ingrese un nombre de usuario: ");
+            name = Console.ReadLine();
 
 
+            Console.Write("Decea que le generemos una password: (si / no) ");
+            opcion = Console.ReadLine();
+
+            opcion = opcion.ToLower();
+
+            switch (opcion)
+            {
+                case "si":
+                    EjercicioConString ejercicioConString = new EjercicioConString();
+                    ejercicioConString.GenerarPassword();
+                    break;
+
+                case "no":
+                    break;
+            }
+
+            //Console.WriteLine($"Esta es la password: {ejercicioConString.GenerarPassword()}");
 
             //********************************************************************************************************************
 
