@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seccion10\EstructuraEnumeracion.cs" />
     <Compile Include="Seccion4\Ejercicio Do While.cs" />
     <Compile Include="Seccion4\Ejercicio While.cs" />
     <Compile Include="Seccion4\EjerciciosSeccion4.cs" />

@@ -11,6 +11,7 @@ using Curso_C_.Seccion7;
 using Curso_C_.Seccion8;
 using System.Xml.Linq;
 using Curso_C_.Seccion9;
+using Curso_C_.Seccion10;
 
 namespace Curso_C_
 {
@@ -396,8 +397,8 @@ namespace Curso_C_
             //**************************************************** Seccion 9
 
 
-            ClaseString claseString = new ClaseString();
-            claseString.MethodString();
+            //ClaseString claseString = new ClaseString();
+            //claseString.MethodString();
 
 
 
@@ -486,6 +487,65 @@ namespace Curso_C_
             //    Console.WriteLine("Debes de pagar: $40");
 
             //}
+
+
+            //************************************************************************ Seccion10
+
+
+            //Acceder a una estrucutura
+            //Instanciando una estructura
+
+            /*
+             * En una clase()
+             * 
+             * Memoria (head) --> alumno Object
+             * 
+             * Memoria (stack) --> referencia al objeto --> alumno1 (ref)
+             * 
+             */
+
+
+            /*
+             * 
+             * En una estructura
+             * 
+             * todo queda en el (stack) sin crear un Objeto en la memoria (head)
+             * 
+             */
+
+
+            /*
+             * Cuando usar una estructura o una clase?
+             * 
+             * R// Conjunto de datos pequenos y especificos
+             * R// Datos formen parte de un objeto aun mas grande
+             * 
+             */
+
+            EstructuraAlumno alumno1 = new EstructuraAlumno();
+            alumno1.Nombre = "Isaac";
+
+            EstructuraAlumno alumno2 = alumno1;
+            alumno2.Nombre = "Humberto";
+
+            Console.WriteLine($"El nombre del alumno1 es: { alumno1.Nombre }");
+            Console.WriteLine($"El nombre del alumno2 es: { alumno2.Nombre }");
+
+
+
+
+            //********************************************************************************************************************************************
+
+
+
+
+
+            //************************************************************************ Seccion11
+
+
+
+
+            //********************************************************************************************************************************************
 
         }
     }
