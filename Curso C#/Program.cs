@@ -18,6 +18,8 @@ namespace Curso_C_
     {
         static void Main(string[] args)
         {
+
+            #region "Ordenar codigo"
             //Segundo_ejercicio_para_for factorial = new Segundo_ejercicio_para_for();
             //factorial.StartFactorial();
 
@@ -399,32 +401,63 @@ namespace Curso_C_
             //ClaseString claseString = new ClaseString();
             //claseString.MethodString();
 
-            
-            string name, opcion, password;
 
-            Console.WriteLine("\t\tRegistro\n\n");
+            //string name, opcion, password;
+            //(bool passwordValida, string mensajeError) verificarPassword;
 
-            Console.Write("Ingrese un nombre de usuario: ");
-            name = Console.ReadLine();
+            //Console.WriteLine("\t\tRegistro\n\n");
+
+            //Console.Write("Ingrese un nombre de usuario: ");
+            //name = Console.ReadLine();
 
 
-            Console.Write("Decea que le generemos una password: (si / no) ");
-            opcion = Console.ReadLine();
+            //Console.Write("Decea que le generemos una password: (si / no) ");
+            //opcion = Console.ReadLine();
 
-            opcion = opcion.ToLower();
+            //opcion = opcion.ToLower();
 
-            switch (opcion)
-            {
-                case "si":
-                    EjercicioConString ejercicioConString = new EjercicioConString();
-                    ejercicioConString.GenerarPassword();
-                    break;
+            //switch (opcion)
+            //{
+            //    case "si":
+            //        EjercicioConString ejercicioConString = new EjercicioConString();
+            //        password = ejercicioConString.GenerarPassword();
 
-                case "no":
-                    break;
-            }
+            //        Console.WriteLine($"Esta es la password generada: {password}");
+
+            //        Console.Write("Presiona cualquier tecla para completar tu registro");
+            //        Console.ReadKey();
+            //        Console.Clear();
+
+            //        Console.WriteLine($"Datos de tu usuario : {name} , y Pass: {password}");
+            //        break;
+
+            //    case "no":
+            //        Console.WriteLine("Ingrese su password debe tener al menos un numero, una letra mayuscula, una minuscula y un caracter especial");
+            //        password = Console.ReadLine();
+
+            //        EjercicioConString ejercicioConString1 = new EjercicioConString();
+            //        verificarPassword = ejercicioConString1.ComprobarPassword(password);
+
+            //        if (verificarPassword.passwordValida)
+            //        {
+            //            Console.Write("Presiona cualquier tecla para completar tu registro");
+            //            Console.ReadKey();
+            //            Console.Clear();
+
+            //            Console.WriteLine($"Datos de tu usuario : {name} , y Pass: {password}");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine(verificarPassword.mensajeError + ", Ingresa una password");
+            //        }
+            //        break;
+            //}
 
             //Console.WriteLine($"Esta es la password: {ejercicioConString.GenerarPassword()}");
+
+
+
+
 
             //********************************************************************************************************************
 
@@ -512,6 +545,16 @@ namespace Curso_C_
 
             //}
 
+            #endregion
+
+
+            #region
+
+            TareaUno tareaUno = new TareaUno();
+
+            tareaUno.VerificarDos();
+
+            #endregion
         }
     }
 }

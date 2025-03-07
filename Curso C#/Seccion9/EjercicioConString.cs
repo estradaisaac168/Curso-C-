@@ -20,7 +20,7 @@ namespace Curso_C_.Seccion9
         string letrasMin = "abcdefghijklmnopqrstuvwxyz";
         string letrasMay = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         string caracterEspecial = "$%#&!?";
-        int numContiene=0, minContiene=0, mayContiene=0, espContienel=0;
+        int numContiene=0, minContiene=0, mayContiene=0, espContiene=0;
 
 
         public string GenerarPassword()
@@ -57,7 +57,7 @@ namespace Curso_C_.Seccion9
                         }
                         break;
                     case 1:
-                        if (minContiene < numTener)
+                        if (minContiene < minTener)
                         {
                             caracterEscogido = letrasMin[random.Next(letrasMin.Length)];
                             passwordGenerado += caracterEscogido;
@@ -65,7 +65,7 @@ namespace Curso_C_.Seccion9
                         }
                         break;
                     case 2:
-                        if (mayContiene < numTener)
+                        if (mayContiene < mayTener)
                         {
                             caracterEscogido = letrasMay[random.Next(letrasMay.Length)];
                             passwordGenerado += caracterEscogido;
@@ -73,11 +73,11 @@ namespace Curso_C_.Seccion9
                         }
                         break;
                     case 3:
-                        if (espContienel < numTener)
+                        if (espContiene < espTener)
                         {
                             caracterEscogido = caracterEspecial[random.Next(caracterEspecial.Length)];
                             passwordGenerado += caracterEscogido;
-                            espContienel++;
+                            espContiene++;
                         }
                         break;
                 }
@@ -86,5 +86,102 @@ namespace Curso_C_.Seccion9
             return passwordGenerado;
 
         }
+    
+        
+        public (bool, string) ComprobarPassword(string password)
+        {
+            bool passwordValida = false;
+
+            bool hayNumero = false, hayMinuscula = false, hayMayuscula = false, hayEspecial = false;
+
+            string mensajeError = "";
+
+            if (password.Length >= 8 && password.Length <= 20)
+            {
+                foreach (var numero in numeros)
+                {
+                    if (password.IndexOf(numero) >= 0)
+                    {
+                        hayNumero = true;
+                        break;
+                    }
+                    else
+                    {
+                        hayNumero = false;
+                        mensajeError = "La password debe contener al menos un numero";
+                    }
+                }
+
+                if (hayNumero)
+                {
+                    foreach (char letra in letrasMin)
+                    {
+                        if (password.IndexOf(letra) >= 0)
+                        {
+                            hayMinuscula = true;
+                            break;
+                        }
+                        else
+                        {
+                            hayMinuscula = false;
+                            mensajeError = "La password debe contener al menos una letra minuscula";
+                        }
+                    }
+
+
+                    if (hayMinuscula)
+                    {
+                        foreach (char letra in letrasMay)
+                        {
+                            if (password.IndexOf(letra) >= 0)
+                            {
+                                hayMayuscula = true;
+                                break;
+                            }
+                            else
+                            {
+                                hayMayuscula = false;
+                                mensajeError = "La password debe contener al menos una letra mayuscula";
+                            }
+                        }
+
+
+                        if (hayMayuscula)
+                        {
+                            foreach (char letra in caracterEspecial)
+                            {
+                                if (password.IndexOf(letra) >= 0)
+                                {
+                                    hayEspecial = true;
+                                    break;
+                                }
+                                else
+                                {
+                                    hayEspecial = false;
+                                    mensajeError = "La password debe contener al menos un caracter especial";
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if (hayNumero && hayMinuscula && hayMayuscula && hayEspecial)
+                {
+                    passwordValida = true;
+                }
+                else
+                {
+                    passwordValida = false;
+                }
+
+            }
+            else
+            {
+                mensajeError = "La password debe contener entre 8 - 20 caracteres";
+                passwordValida = false;
+            }
+
+            return (passwordValida, mensajeError);
+        } 
     }
 }

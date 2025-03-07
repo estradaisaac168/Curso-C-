@@ -70,6 +70,7 @@
     <Compile Include="Seccion8\Stack.cs" />
     <Compile Include="Seccion9\ClaseString.cs" />
     <Compile Include="Seccion9\EjercicioConString.cs" />
+    <Compile Include="Seccion9\TareaUno.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
