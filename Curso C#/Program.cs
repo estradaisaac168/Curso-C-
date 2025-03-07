@@ -396,8 +396,8 @@ namespace Curso_C_
             //**************************************************** Seccion 9
 
 
-            ClaseString claseString = new ClaseString();
-            claseString.MethodString();
+            //ClaseString claseString = new ClaseString();
+            //claseString.MethodString();
 
 
 
@@ -487,6 +487,53 @@ namespace Curso_C_
 
             //}
 
+
+            #region "Seccion 10 (Estructuras)"
+            Estructuras estructuras = new Estructuras();
+
+            Cliente cliente = new Cliente();
+            cliente.nombre = "Isaac Estrada";
+            cliente.edad = 32;
+            cliente.direccion = "Soyapango";
+
+            Cliente cliente2 = new Cliente();
+            cliente2.nombre = "Isaac Estrada";
+            cliente2.edad = 32;
+            cliente2.direccion = "Soyapango";
+
+            estructuras.RegistroClientes(cliente);
+            estructuras.RegistroClientes(cliente2);
+
+            estructuras.MostrarClientes();
+
+
+            ListaReproduccion listaReproduccion = new ListaReproduccion();
+            listaReproduccion.Nombre = "Clasicos";
+
+            listaReproduccion.cancion1.Titulo = "Cancion uno";
+            listaReproduccion.cancion1.Artista = "Mi artista favorito";
+            listaReproduccion.cancion1.Duracion = 34;
+
+            Console.WriteLine(listaReproduccion.ToString());
+
+            #region "Inicializadores de objetos"
+
+            Persona persona = new Persona
+            {
+                Nombre = "Isaac",
+                Apellido = "Estrada",
+                Edad = 34
+            };
+
+            Console.WriteLine("\nInicializador de objetos");
+
+
+            Console.WriteLine(persona.ToString());
+
+
+            #endregion
+
+            #endregion
         }
     }
 }
